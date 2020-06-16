@@ -1,0 +1,2 @@
+export const GET_USERS_STATS = "GET_USERS_STATS";
+export const GET_USER_STATISTIC = "GET_USER_STATISTIC";

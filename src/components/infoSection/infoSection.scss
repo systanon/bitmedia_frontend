@@ -1,0 +1,18 @@
+.info_section{
+  padding-bottom: 120px;
+}
+.info_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.info_wrap_block {
+  width: 33.3%;
+}
+.info_item {
+  margin: 10px;
+  padding: 45px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+}

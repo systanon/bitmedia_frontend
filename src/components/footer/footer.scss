@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+}
+.footer_input_wrap {
+  position: relative;
+  z-index: 5;
+  max-width: 580px;
+  margin: 0 auto;
+  & input {
+    font-size: 14px;
+    color: #adadad;
+    border: none;
+    width: 100%;
+    padding: 17px;
+    border-radius: 5px;
+  }
+  & button {
+    left: 98%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 16px;
+    padding: 13px 25px;
+    transform: translate(-92%, -50%);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #3a80ba;
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  color: #fff;
+}
+.footer_logo_link {
+  font-size: 40px;
+  color: #fff;
+}
+.footer_bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

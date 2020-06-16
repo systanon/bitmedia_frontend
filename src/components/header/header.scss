@@ -1,0 +1,144 @@
+.header {
+  position: relative;
+  background: linear-gradient(92.09deg, #255d8b 2.29%, #3a80ba 96.79%);
+}
+.header_text_media {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header_bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.header_text {
+  text-align: left;
+}
+.header_highlighted {
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+}
+.header_title {
+  font-weight: lighter;
+  font-size: 48px;
+  color: #fff;
+}
+.header_phone {
+  position: relative;
+  width: 267px;
+  height: 550px;
+  background-color: white;
+  border-radius: 40px 40px;
+  -webkit-box-shadow: 0 20px 13px -6px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 20px 13px -6px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 20px 13px -6px rgba(0, 0, 0, 0.55);
+  z-index: 5;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 25px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+}
+
+.micro_cam {
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  z-index: 5;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -4px;
+    right: -23px;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+}
+.mobile_btn_left {
+  position: absolute;
+  width: 5px;
+  border-radius: 2px 0 0 2px;
+  height: 20px;
+  top: 50px;
+  background-color: white;
+  left: -3px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    border-radius: 2px 0 0 2px;
+    height: 35px;
+    background-color: white;
+    top: 60px;
+    left: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    border-radius: 2px 0 0 2px;
+    height: 35px;
+    top: 100px;
+    left: 0;
+  }
+}
+.mobile_btn_right {
+  position: absolute;
+  width: 5px;
+  height: 55px;
+  background-color: white;
+  border-radius: 0 2px 2px 0;
+  top: 95px;
+  right: -3px;
+}
+.picture_in_phone {
+  position: relative;
+  margin: 15px;
+  width: 237px;
+  height: 520px;
+  background-image: url("../../images/mobile.png");
+  border-radius: 25px 25px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px;
+  }
+}
+.header_desc {
+  color: #ffffff;
+  font-size: 18px;
+}
+.btn_stats {
+  position: relative;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  outline: inherit;
+  cursor: pointer;
+  color: #3a80ba;
+  z-index: 5;
+  border: none;
+}
