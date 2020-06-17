@@ -1,5 +1,5 @@
 import { Footer } from "./Footer";
-import { Copyrigth } from "./Copyright";
+import { Copyrigth } from "../copyright/Copyright";
 
 export { Footer };
 export { Copyrigth };

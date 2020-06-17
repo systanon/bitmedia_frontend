@@ -1,9 +1,13 @@
 .App {
+  height: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .container{
   width: 1200px;
   margin: 0 auto;
+  flex: 1 0 auto;
 }
 
 .App-logo {

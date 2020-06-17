@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.scss";
-import { Copyrigth } from "./Copyright";
+import { Copyrigth } from "../copyright/Copyright";
 export const Footer = () => {
   return (
     <footer className="footer">

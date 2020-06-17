@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useHistory, NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
 import { LIMIT } from "../../constants";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
-import "./usersStatistic.scss";
+
 import { Logo } from "../../components/logo";
 import { Copyrigth } from "../../components/footer";
+import { NavUsersList } from "../../components/navList";
+
+import "./usersStatistic.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -87,44 +91,41 @@ export const UsersStatistics = ({ users, getUsersStats, total }) => {
 
   return (
     <>
-      <div className="header_users">
-        <div className="container">
-          <Logo />
-        </div>
-      </div>
+      <Logo />
       <div className="container">
-        <div className="nav_user_list">
-          <NavLink to="/" className="previous_page">
-            Main page
-          </NavLink>
-          <NavLink to="/users" className="current_page">
-            User statistics
-          </NavLink>
-        </div>
-        <h2 className="title_users_stat">Users statistics</h2>
-        <div className="table-container">
-          <table>
-            <thead>
-              <tr>{th}</tr>
-            </thead>
-            <tbody>{trs}</tbody>
-          </table>
-
-          <div className={classes.root}>
-            <Pagination
-              count={pageCount}
-              variant="outlined"
-              shape="rounded"
-              onClick={handler}
-            />
+        <NavUsersList />
+        {users.length === 0 ? (
+          <div className="no_users">
+            <h2>NO USERS</h2>
           </div>
-        </div>
+        ) : (
+          <>
+            <h2 className="title_users_stat">Users statistics</h2>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>{th}</tr>
+                </thead>
+                <tbody>{trs}</tbody>
+              </table>
+              <div className={classes.root}>
+                <Pagination
+                  count={pageCount}
+                  variant="outlined"
+                  shape="rounded"
+                  onClick={handler}
+                />
+              </div>
+            </div>
+          </>
+        )}
       </div>
-      <div className="footer_users">
-        <div className="container">
-          <Copyrigth />
-        </div>
-      </div>
+      <Copyrigth />
     </>
   );
+};
+UsersStatistics.propTypes = {
+  users: PropTypes.array,
+  getUsersStats: PropTypes.func.isRequired,
+  total: PropTypes.number,
 };

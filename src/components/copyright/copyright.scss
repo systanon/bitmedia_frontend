@@ -1,0 +1,16 @@
+.copyright {
+  background: #1c3b55;
+  padding: 10px 0;
+  flex-shrink: 0;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    color: #fff;
+  }
+}
+.footer_logo_link {
+  font-size: 40px;
+  color: #fff;
+}

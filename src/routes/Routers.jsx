@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Main } from "../components/main";
 import { UsersStatistics } from "./usersStatistics";
 import { UserDetailStatistics } from "./userDetailStatistic";

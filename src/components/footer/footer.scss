@@ -26,19 +26,10 @@
     border: none;
     color: #fff;
     background-color: #3a80ba;
+    cursor: pointer;
   }
 }
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 5;
-  color: #fff;
-}
-.footer_logo_link {
-  font-size: 40px;
-  color: #fff;
-}
+
 .footer_bg {
   width: 100%;
   position: absolute;
